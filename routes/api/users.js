@@ -13,7 +13,7 @@ router.get('/test', (req, res) => res.json({
   msg: "Users Works"
 }));
 
-// @route   GET api/users/registration
+// @route   GET api/users/register
 // @desc    Register user
 // @access  Public
 router.post('/register', (req, res) => {
@@ -35,7 +35,7 @@ router.post('/register', (req, res) => {
         name: req.body.name,
         email: req.body.email,
         avatar,
-        password: request.body.password
+        password: req.body.password
       });
 
       bcrypt.genSalt(10, (err, salt) => {
