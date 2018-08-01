@@ -25,3 +25,11 @@
 - the constructor method runs super()
 - then I set state within the constructor -> this.state = {}
 - state is just a plain javascript object with key: value pairs
+
+## props
+
+- props are the properties that are passed in when the component is being called in App.js
+
+## Redux
+
+- I want all my requests to go through a Redux action
