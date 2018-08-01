@@ -32,6 +32,13 @@
 
 ## Redux
 
+- Redux allows storage for state that wants to be shared with multiple React components - App state
+- single source of truth
+- saves creating multiple sharing paths from component to component
+
+  **FLOW OF DATA:** 1) Action(called from a React component) -> 2) Reducer -> 3) Store(Redux database) -> 4) UI - Returns data to React component to be rendered in UI
+
+- I never change state I just make a copy of it with new changes to be sent back to React
 - I want all my requests to go through a Redux action
 - I initially set up 'axios' in the onSubmit method within my register component
 - Axios should be moved to Redux state
@@ -41,3 +48,7 @@
 - const { errors } = this.state;
 - is the same as const errors = this.state.errors
 - by putting {} around something it is like 'pulling' something out of the referenced object
+
+## reducers
+
+- every reducer exports a function
