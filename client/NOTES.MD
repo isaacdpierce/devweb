@@ -33,3 +33,11 @@
 ## Redux
 
 - I want all my requests to go through a Redux action
+- I initially set up 'axios' in the onSubmit method within my register component
+- Axios should be moved to Redux state
+
+## Destructuring side note
+
+- const { errors } = this.state;
+- is the same as const errors = this.state.errors
+- by putting {} around something it is like 'pulling' something out of the referenced object
