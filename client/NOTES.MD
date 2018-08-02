@@ -52,3 +52,21 @@
 ## reducers
 
 - every reducer exports a function
+
+## actions
+
+- everything we do in Redux is an action
+
+## connect
+
+- in order to use Redux in a component I need to import { connect } from 'react-redux'
+- { connect } makes the connection from Redux to react
+- often programmers turn a react component into a Container. (Brad Traversy does not... why?)
+
+## mapStateToProps()
+
+- in order to get state into a component I must use mapStateToProps function
+
+## PropTypes
+
+- In React any properties I have in a Component should be mapped to PropTypes
