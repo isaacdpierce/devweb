@@ -56,6 +56,7 @@
 ## actions
 
 - everything we do in Redux is an action
+- can't use this.setState within an action
 
 ## connect
 
