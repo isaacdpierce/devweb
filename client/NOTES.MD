@@ -57,6 +57,7 @@
 
 - everything we do in Redux is an action
 - can't use this.setState within an action
+- Redux actions are passed in and accessed through props
 
 ## connect
 
