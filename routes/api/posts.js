@@ -51,16 +51,16 @@ router.post(
   (req, res) => {
     const { errors, isValid } = validatePostInput(req.body);
 
-    // Check validation
+    // Check Validation
     if (!isValid) {
-      // If any errors send 400 with errors object
+      // If any errors, send 400 with errors object
       return res.status(400).json(errors);
     }
 
     const newPost = new Post({
       text: req.body.text,
       name: req.body.name,
-      avatar: req.body,
+      avatar: req.body.avatar,
       user: req.user.id
     });
 

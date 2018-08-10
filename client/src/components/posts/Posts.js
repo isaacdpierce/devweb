@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import PostForm from './PostForm';
-import Spinner from '../common/Spinner';
+//import Spinner from '../common/Spinner';
 
 class Posts extends Component {
   render() {
@@ -21,4 +21,12 @@ class Posts extends Component {
   }
 }
 
-export default Posts;
+Posts.propTypes = {
+  post: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  post: state.post
+});
+
+export default connect(mapStateToProps)(Posts);
